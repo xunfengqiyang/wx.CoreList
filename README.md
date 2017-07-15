@@ -16,50 +16,50 @@
 3. 建议初始化页面的时侯，一次性先copy以下代码到您的控制器js
 
 
-    // NewsList.js
-    var CoreList = require('../FrameWorks/CoreList/CoreList.js');
+        // NewsList.js
+        var CoreList = require('../FrameWorks/CoreList/CoreList.js');
 
-    Page({
+        Page({
 
-      data: {
+          data: {
 
-          //CoreList框架变量
-          //1.动态变量:无需配置，请保留，框架会自动调用
-          dataList: null,
-          footerStatusText: null,
+              //CoreList框架变量
+              //1.动态变量:无需配置，请保留，框架会自动调用
+              dataList: null,
+              footerStatusText: null,
 
-          //2.静态变量：请填写配置(为了更灵活，请带上单位)
-          insetsTop: "100px",
-          insetsBottom: "50px"
+              //2.静态变量：请填写配置(为了更灵活，请带上单位)
+              insetsTop: "100px",
+              insetsBottom: "50px"
 
-      },
+          },
 
-      //初始化
-      onLoad: function(o){
+          //初始化
+          onLoad: function(o){
 
-        CoreList.url = "http://39.108.3.179/tp5test/index"
-        CoreList.params = { "uid": "1" }
-        CoreList.method = "POST"
-        CoreList.listVC = this
-        CoreList.prepare()
-      },
+            CoreList.url = "http://39.108.3.179/tp5test/index"
+            CoreList.params = { "uid": "1" }
+            CoreList.method = "POST"
+            CoreList.listVC = this
+            CoreList.prepare()
+          },
 
-      //自定义框架数据
-      corelist_findUsefullData_ReturnObj: function (obj){
+          //自定义框架数据
+          corelist_findUsefullData_ReturnObj: function (obj){
 
-        return obj.list
-      },
+            return obj.list
+          },
 
-      //触发顶部刷新
-      onPullDownRefresh: function(){
+          //触发顶部刷新
+          onPullDownRefresh: function(){
 
-        CoreList.beginHeaderRefresh()
-      },
+            CoreList.beginHeaderRefresh()
+          },
 
-      //触发底部刷新
-      onReachBottom: function(){
+          //触发底部刷新
+          onReachBottom: function(){
 
-        CoreList.beginFooterRefresh()
-      }
+            CoreList.beginFooterRefresh()
+          }
 
-    })
+        })
