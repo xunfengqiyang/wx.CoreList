@@ -1,0 +1,12 @@
+<import src="/pages/FrameWorks/CoreList/CoreList.wxml" />
+<template is="Template_CoreList_TopPart" />
+<block wx:for="{{20}}" wx:key="item">
+  <view class="cell">
+    <image class="imgV"></image>
+    <view class="labelContentView">
+      <view class="titleLabel">我是标题：{{index}}</view>
+      <view class="descLabel">我是描述：{{index}}</view>
+    </view>
+  </view>
+</block>
+<template is="Template_CoreList_BottomPart" data="{{footerStatusText}}" />

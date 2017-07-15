@@ -1,0 +1,9 @@
+/* NewsList.wxss */
+@import "/pages/FrameWorks/CoreList/CoreList.wxss";
+
+.cell { width: 100%; height: 100px; display: flex; background: white }
+.imgV { width: 80px; height: 80px;
+margin: 10px; flex: 1; background-color: lightgray; }
+.labelContentView { flex: 1; display: flex; flex-direction: column;}
+.titleLabel {flex: 1; font-size: 36rpx; color: black;  display: flex; align-items: center;}
+.descLabel {flex: 1;font-size: 30rpx; color: gray;display: flex; align-items: center;}
