@@ -1,7 +1,7 @@
 <template name="Template_CoreList_TopPart">
-    <view class="insetsTop"></view>
+    <view class="insetsTop" style="height:{{insetsTop}}"></view>
 </template>  
 <template name="Template_CoreList_BottomPart">  
     <view class="footer">{{footerStatusText}}</view>
-    <view class="insetsBottom"></view>
+    <view class="insetsBottom" style="height:{{insetsBottom}}"></view>
 </template>
