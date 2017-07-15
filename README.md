@@ -3,9 +3,11 @@
 
 一.框架截图
 ==========
-<br/>
+
+
 ![image](https://github.com/ShiDianSoftware/Resource/blob/master/CoreList/a.gif)
-<br/>
+
+
 ![image](https://github.com/ShiDianSoftware/Resource/blob/master/CoreList/b.gif)
 
 
